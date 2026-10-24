@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg">#0A0E17</color>
+    <color name="surface">#121929</color>
+    <color name="key">#1B2437</color>
+    <color name="key_pressed">#2B3C60</color>
+    <color name="key_stroke">#26324A</color>
+    <color name="accent">#19B5FE</color>
+    <color name="accent_dark">#0E7CB3</color>
+    <color name="danger">#E53935</color>
+    <color name="danger_dark">#9E1F1C</color>
+    <color name="ok">#2ECC71</color>
+    <color name="text">#E8EEF5</color>
+    <color name="text_muted">#8794A8</color>
+    <color name="ic_launcher_background">#0E7CB3</color>
+</resources>

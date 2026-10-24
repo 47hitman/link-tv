@@ -1,0 +1,55 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'id.linktv.thumpremote'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId 'id.linktv.thumpremote'
+        minSdk 21
+        targetSdk 34
+        versionCode 1
+        versionName '1.0'
+    }
+
+    signingConfigs {
+        // Keystore ini sengaja ikut di repo supaya APK hasil build lokal dan
+        // GitHub Actions memakai tanda tangan yang sama (update tanpa uninstall).
+        // Bukan rahasia: aplikasi ini tidak menyimpan data sensitif.
+        release {
+            storeFile file('../keystore/thump-remote.jks')
+            storePassword 'thumpremote'
+            keyAlias 'thump'
+            keyPassword 'thumpremote'
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            signingConfig signingConfigs.release
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    lint {
+        abortOnError false
+        checkReleaseBuilds false
+    }
+
+    applicationVariants.all { variant ->
+        variant.outputs.all {
+            outputFileName = "ThumpRemote-${variant.versionName}-${variant.buildType.name}.apk"
+        }
+    }
+}
+
+// Tanpa dependensi eksternal: hanya framework Android bawaan.
+dependencies {
+}

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Thump Remote</string>
+    <string name="device_name">Thump TP-6911 · 52W×4</string>
+    <string name="title_scan">Cari Kode IR</string>
+    <string name="title_settings">Pengaturan Kode</string>
+
+    <string name="ir_ready">IR blaster siap · 38 kHz</string>
+    <string name="ir_missing">HP ini tidak memiliki IR blaster. Aplikasi butuh HP dengan pemancar inframerah (mis. Xiaomi/Redmi/POCO, Huawei/Honor, sebagian Oppo/Realme).</string>
+    <string name="ir_send_failed">Gagal mengirim sinyal IR</string>
+    <string name="code_not_set">Tombol %1$s belum punya kode. Buka \"Cari Kode\" untuk menemukannya.</string>
+    <string name="hint_default_codes">Kode bawaan adalah preset generik head unit MP5 (NEC alamat 0x00). Kalau unit tidak merespons, cari kodenya lewat menu Cari Kode.</string>
+
+    <string name="btn_scan">Cari Kode</string>
+    <string name="btn_settings">Pengaturan</string>
+
+    <!-- Scan -->
+    <string name="scan_intro">Arahkan HP ke jendela IR di pojok kiri atas head unit. Aplikasi akan mengirim kode satu per satu. Begitu head unit bereaksi (volume berubah, mute, ganti lagu, dll), segera tekan tombol besar ITU DIA!</string>
+    <string name="scan_address">Alamat NEC</string>
+    <string name="scan_address_custom">Alamat kustom (hex, mis. 00 atau 6B86)</string>
+    <string name="scan_target">Simpan ke tombol</string>
+    <string name="scan_target_none">— pilih nanti —</string>
+    <string name="scan_start_cmd">Mulai dari kode (hex)</string>
+    <string name="scan_interval">Jeda antar kode: %1$d ms</string>
+    <string name="scan_start">Mulai Scan</string>
+    <string name="scan_stop">Berhenti</string>
+    <string name="scan_hit">ITU DIA!</string>
+    <string name="scan_idle">Siap. Tekan Mulai Scan.</string>
+    <string name="scan_sending">Mengirim alamat 0x%1$s · kode 0x%2$s  (%3$d/%4$d)</string>
+    <string name="scan_done">Scan selesai. Tidak ada reaksi? Coba alamat lain.</string>
+    <string name="scan_candidates">Kandidat (yang terakhir dikirim, paling baru di atas)</string>
+    <string name="scan_candidates_hint">Tekan Kirim pada tiap kandidat untuk memastikan mana yang benar-benar bekerja, lalu tekan Pakai untuk menyimpannya ke tombol.</string>
+    <string name="scan_all_addresses">Semua alamat 00–FF (sangat lama, ±%1$d menit)</string>
+    <string name="send">Kirim</string>
+    <string name="use">Pakai</string>
+    <string name="saved_to">Tersimpan ke tombol %1$s</string>
+    <string name="choose_key">Simpan ke tombol…</string>
+
+    <!-- Settings -->
+    <string name="settings_intro">Ketuk tombol untuk mengubah kodenya. Format NEC: alamat + perintah (hex). Alamat 4 digit berarti NEC extended (byte yang dikirim lebih dulu ditulis di belakang, contoh Flipper \"86 6B\" → 6B86).</string>
+    <string name="settings_default_address">Alamat bawaan untuk semua tombol (hex)</string>
+    <string name="settings_preset">Preset</string>
+    <string name="settings_export">Salin semua kode</string>
+    <string name="settings_import">Tempel &amp; impor</string>
+    <string name="settings_reset">Reset ke bawaan</string>
+    <string name="copied">Kode disalin ke clipboard</string>
+    <string name="imported">%1$d kode diimpor</string>
+    <string name="import_failed">Tidak ada kode yang dikenali di clipboard</string>
+    <string name="reset_confirm">Hapus semua kode yang Anda simpan dan kembali ke preset?</string>
+    <string name="edit_address">Alamat (hex)</string>
+    <string name="edit_command">Perintah (hex)</string>
+    <string name="edit_raw">Atau pola RAW (µs, dipisah koma; 38 kHz)</string>
+    <string name="test">Tes</string>
+    <string name="save">Simpan</string>
+    <string name="delete">Hapus</string>
+    <string name="cancel">Batal</string>
+    <string name="yes">Ya</string>
+    <string name="not_set">belum diatur</string>
+    <string name="invalid_hex">Nilai hex tidak valid</string>
+    <string name="preset_carmp3">Generik MP5 (NEC 0x00)</string>
+    <string name="preset_empty">Kosong (semua belum diatur)</string>
+</resources>
